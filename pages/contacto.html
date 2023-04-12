@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangkok Barbería</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-title">
+            <h1>Bangkok Barberia RESPONSIVE</h1>
+        </div>
+        <div class="logo">    
+            <img class="foto-logo" src="../img/logo.png" alt="">
+        </div>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li><a class="list-items links" href="../index.html">Inicio</a></li>
+                <li><a class="list-items links" href="../pages/sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="list-items links" href="../pages/tendencias.html">Tendencias</a></li>
+                <li><a class="list-items links" href="../pages/servicios.html">Servicios</a></li>
+                <li><a class="list-items links" href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <H1 class="slogan font">CONTACTO</H1>
+        <section class="formulario slogan2 font">
+            <form class="form" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input id="text" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input email="Email" name="email" placeholder="Ingresa tu Email" required>
+                </div>
+                <div>
+                    <label for="mensaje"></label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje:"></textarea>
+
+                </div>
+                </div>
+                <div>
+                    <label for="opciones"></label>
+                    <select name="opciones">
+                        <option value="" hidden>Selecciona una opción</option>
+                        <option value="generales">Consultas generales</option>
+                        <option value="turnos">Consultas sobre turnos</option>
+                        <option value="precios">Solicitar lista de precios</option>
+                    </select>
+                </div>
+                <div>
+                    <div>Hombre</div>
+                    <input type="radio" name="sexo" value="hombre" />
+                    <div>Mujer</div>
+                    <input type="radio" name="sexo" value="mujer" />
+                </div>
+                <div>
+                    <div>
+                        <label for="newslatter">¿Querés recibir nuestras novedades?</label>
+                        <input type="checkbox" name="aceptar" id="newslatter" value="1">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="reserva bordes">
+                Reserva tu turno:
+                <a href="tel:+1159854777">1158859988</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
