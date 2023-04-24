@@ -1,230 +1,220 @@
-*{
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Merriweather', serif;
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 ul,
-ol{
-    list-style: none;
-    padding: 0%;
+ol {
+  list-style: none;
+  padding: 0%;
 }
 
 /* ============= HEADER ========== */
 .links {
-    font-family: 'Merriweather', serif;
-    font-size: 15px;
-    background-color: rgb(167, 72, 72);
-    padding: 8px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    width: 190px;
-    position: relative;
-}
-.list-item{
-    background-color: brown;
-
-}
-.header{
-    color: rgb(221, 5, 5);
-    padding: 1%;
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  background-color: rgb(167, 72, 72);
+  padding: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 190px;
+  position: relative;
 }
 
-.header-title{
-text-align: center;}
-
-.header-list{
-    text-align: center;
+.list-item {
+  background-color: brown;
 }
 
-.logo{
-    text-align: center;
-    
+.header {
+  color: rgb(221, 5, 5);
+  padding: 1%;
 }
 
-.foto-logo{
-    display: none;
-    width: 180px;
-    height: auto;
+.header-title {
+  text-align: center;
+}
+
+.header-list {
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.foto-logo {
+  display: none;
+  width: 180px;
+  height: auto;
 }
 
 .slogan {
-    font-size: 15px;
-    text-align: center;
-    color: brown;
-    margin-top: 20px;
-    margin-bottom: 50px;
+  font-size: 15px;
+  text-align: center;
+  color: brown;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .bordes {
-    border-radius: 6px;
+  border-radius: 6px;
 }
-.slogan2 {
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-    display: block;
-}
-.reserva {
-    background-color: rgb(167, 72, 72);
-    font-size: 30px;
-    display: inline;
-    position: fixed;
-    right: 0ch;
-    bottom: 0%;
-    margin: 20px;
-    padding: 7px;
-    color: white;
-    font-family: 'Merriweather', serif;
 
+.slogan2 {
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.reserva {
+  background-color: rgb(167, 72, 72);
+  font-size: 30px;
+  display: inline;
+  position: fixed;
+  right: 0ch;
+  bottom: 0%;
+  margin: 20px;
+  padding: 7px;
+  color: white;
+  font-family: "Merriweather", serif;
 }
 
 .font {
-    font-family: 'Merriweather', serif;
-    color: brown;
+  font-family: "Merriweather", serif;
+  color: brown;
 }
 
 .centro {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .fade {
-    width: 35%;
-    height: auto;
+  width: 35%;
+  height: auto;
 }
+
 /* ============ GALERIA =========== */
-
-
-.galeria{
-    padding: 15px;
+.galeria {
+  padding: 15px;
 }
-.galeria-grilla{
+
+.galeria-grilla {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.foto-inicio2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 30vh;
+  width: auto;
+}
+
+.foto-inicio3 {
+  display: none;
+}
+
+/* ============ TABLET =========== */
+@media (min-width: 768px) {
+  .header-title {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 20px;
+  }
+  .logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .foto-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10vh 5vh;
+  }
+  .header-list {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+  }
+  .foto-inicio3 {
+    display: block;
+    order: 1;
+  }
+  .header-nav {
+    grid-column: span 2;
+  }
+  .galeria-grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 50vh);
+    grid-template-areas: "arriba arriba" "medio medio2" "abajo abajo2";
+  }
+  .galeria-grilla img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .foto-inicio3 {
+    grid-column: span 2;
+    grid-row: span 2;
+    grid-area: arriba;
     width: 100%;
     height: auto;
+  }
 }
-.foto-inicio2{
-    display: block;
+/* ============ ESCRITORIO =========== */
+@media (min-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-title {
+    display: none;
+  }
+  .header-nav {
+    display: grid;
+  }
+  .header-list {
+    align-items: center;
+    gap: 0px;
+  }
+  /* galeria    */
+  .foto-inicio2 {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    height: 30vh;
+    height: 50vh;
     width: auto;
-}
-.foto-inicio3{
-    display: none;
-}
-/* ============ TABLET =========== */
-@media (min-width:768px){
-    .header-title{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-    .foto-logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 10vh 5vh;
-    }
-
-    .header-list{
-        display: flex;
-        justify-content: center;
-        gap: 0px;
-
-    }
-
-
-
-    .foto-inicio3{
-        display: block;
-        order: 1;
-    }
-    .header-nav{
-        grid-column: span 2;
-    }
-
-    .galeria-grilla{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 50vh);
-        grid-template-areas: 
-        "arriba arriba"
-        "medio medio2"
-        "abajo abajo2";
-      }
-
-    .galeria-grilla img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;    
-    }
-
-
-    .foto-inicio3 {
-        grid-column: span 2;
-        grid-row: span 2;
-        grid-area: arriba;
-        width: 100%;
-        height: auto;
-      }
+  }
+  .foto-inicio3 {
+    display: flex;
+    order: 1;
+  }
 }
 
-/* ============ ESCRITORIO =========== */
-
-@media(min-width:1200px){
-    .header{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .header-title{
-        display: none;
-    }
-    .header-nav{
-        display: grid;
-    }
-    .header-list{
-        align-items: center;
-        gap: 0px;
-    }
-    /* galeria    */
-    .foto-inicio2{
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        height: 50vh;
-        width: auto;
-    }
-
-    .foto-inicio3{
-        display: flex;
-        order: 1;
-    }
-}   
+/*# sourceMappingURL=main.css.map */
