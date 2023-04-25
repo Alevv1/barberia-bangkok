@@ -7,6 +7,10 @@
 
 a{
     text-decoration: none;
+    color: antiquewhite;
+        &:hover{
+            color: rgba(250, 235, 215, 0.726)
+        }
 }
 
 ul,
@@ -14,7 +18,15 @@ ol{
     list-style: none;
     padding: 0%;
 }
+p{
+    &:hover{
+        color: rgb(25, 90, 6);
+    }
+}
 
+h1{
+    font-size: 25px;
+}
 /* ============= HEADER ========== */
 .links {
     font-family: 'Merriweather', serif;
@@ -57,7 +69,6 @@ text-align: center;}
 }
 
 .slogan {
-    font-size: 15px;
     text-align: center;
     color: brown;
     margin-top: 20px;
