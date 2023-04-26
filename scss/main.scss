@@ -3,7 +3,22 @@
     border: 0;
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
+    color: brown;
 }
+
+.navbar-nav {
+    margin-left: auto;
+  }
+  
+  .nav-link {
+    color: #000;
+  }
+  
+  .navbar-toggler {
+    border-color: #000;
+  }
+  
+  
 
 a{
     text-decoration: none;
