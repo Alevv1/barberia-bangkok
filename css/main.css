@@ -6,6 +6,19 @@
   color: brown;
 }
 
+/* NAVBAR DESPLEGABLE DE TENDENCIAS  */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.navbar-toggler {
+  border-color: #000;
+}
+
 a {
   text-decoration: none;
   color: antiquewhite;
@@ -21,7 +34,7 @@ ol {
 }
 
 p:hover {
-  color: rgb(25, 90, 6);
+  color: rgba(29, 102, 20, 0.963);
 }
 
 h1 {
