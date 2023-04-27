@@ -1,10 +1,6 @@
-*{
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Merriweather', serif;
-    color: brown;
-}
+@import "./base";
+@import "./galeria";
+
 /* NAVBAR DESPLEGABLE DE TENDENCIAS  */
 .navbar-nav {
     margin-left: auto;
@@ -130,31 +126,7 @@ text-align: center;}
     width: 35%;
     height: auto;
 }
-/* ============ GALERIA =========== */
 
-
-.galeria{
-    padding: 15px;
-}
-.galeria-grilla{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    height: auto;
-}
-.foto-inicio2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height: 30vh;
-    width: auto;
-}
-.foto-inicio3{
-    display: none;
-}
 /* ============ TABLET =========== */
 @media (min-width:768px){
     .header-title{
