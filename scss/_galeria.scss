@@ -1,0 +1,25 @@
+/* ============ GALERIA =========== */
+
+
+.galeria{
+    padding: 15px;
+}
+.galeria-grilla{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.foto-inicio2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 30vh;
+    width: auto;
+}
+.foto-inicio3{
+    display: none;
+}
