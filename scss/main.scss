@@ -131,7 +131,15 @@ text-align: center;}
     width: 35%;
     height: auto;
 }
+.zoom {
+    transition: transform .2s; /* Animation */
 
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 /* ============ TABLET =========== */
 @media (min-width:768px){
     .header-title{
@@ -218,6 +226,8 @@ text-align: center;}
         gap: 0px;
     }
     /* galeria    */
+
+
     .foto-inicio2{
         display: flex;
         margin-left: auto;
